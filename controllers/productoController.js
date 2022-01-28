@@ -24,7 +24,7 @@ const crearProducto = async (req, res) => {
             // Creamos nuestro producto
             let  producto = await productosDao.save(newItem);            
             if (producto) {                          
-                res.status(200).json({ msg: `Producto insertado correctamente id:${producto.id}` });
+                res.status(200).json({ msg: `Producto insertado correctamente id:${producto}` });
             } else {
                 res.status(500).json({ msg: "Error al crearProducto" });
             }
@@ -71,7 +71,7 @@ const actualizarProductos = async (req, res) => {
         producto.precio = precio;
         producto.stock = stock;
         producto = await productosDao.update(producto)
-        res.json(producto);
+        res.status(200).json({ msg: `Producto actualizado correctamente` });
 
     } catch (error) {
         loggerError.error(error);
@@ -107,7 +107,7 @@ const eliminarProducto = async (req, res) => {
         }
 
         await productosDao.deleteById({ _id: req.params.id })
-        res.json({ msg: 'Producto eliminado con exito' });
+        res.json({ msg: 'Producto eliminado correctamente' });
 
     } catch (error) {
         loggerError.error(error);

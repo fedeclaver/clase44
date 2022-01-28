@@ -48,7 +48,7 @@ async function obtenerProductos() {
 async function getProductbyId() {
     try {
         const productsLists = await axios.get(URL + '/productos/listar');
-        const idProduct = productsLists.data[productsLists.data.length - 1]._id;
+        const idProduct = productsLists.data[productsLists.data.length - 1].id;
 
         let response = await axios.get(URL + `/productos/listar/${idProduct}`);
         return response.data;
@@ -60,7 +60,7 @@ async function getProductbyId() {
 async function updateProducto() {
     try {
         const productsLists = await axios.get(URL + '/productos/listar/');
-        const idProduct = productsLists.data[productsLists.data.length - 1]._id;
+        const idProduct = productsLists.data[productsLists.data.length - 1].id;
 
         let response = await axios.put(URL + `/productos/actualizar/${idProduct}`, 
         {
@@ -76,7 +76,7 @@ async function updateProducto() {
 async function deleteProduct() {
     try {
         const productsLists = await axios.get(URL + '/productos/listar/');
-        const idProduct = productsLists.data[productsLists.data.length - 1]._id;
+        const idProduct = productsLists.data[productsLists.data.length - 1].id;
 
         let response = await axios.delete(URL + `/productos/borrar/${idProduct}`);
         return response.data;
@@ -86,20 +86,19 @@ async function deleteProduct() {
 };
 
 (async () => {
-   // console.log('LOGIN USUARIO->')
-   // console.log(await login())
-    //console.log('CREAR PRODUCT->')
+  
+    //console.log('CREAR PRODUCTO->')
     //console.log(await createProducto())
 
-    console.log('OBTENER PRODUCTOS->')
-    console.log(await obtenerProductos())
+  //  console.log('OBTENER PRODUCTOS->')
+  //  console.log(await obtenerProductos())
 
-   // console.log('GET PRODUCT BY ID ->')
-    //console.log(await getProductbyId())
+ //console.log('OBTENER PRODUCTO POR ID ->')
+  // console.log(await getProductbyId())
 
-    console.log('UPTDATE PRODUCT ->')
-   console.log(await updateProducto())
+   //console.log('ACTUALIZAR PRODUCTO ->')
+   //console.log(await updateProducto())
 
-    //console.log('DELETE PRODUCT ->')
-   // console.log(await deleteProduct())
+    console.log('ELIMINAR PRODUCT ->')
+    console.log(await deleteProduct())
 })();

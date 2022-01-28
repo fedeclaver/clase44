@@ -311,3 +311,27 @@
     at crearProducto (E:\Users\Fede\Documents\DESA\backend\clase42\controllers\productoController.js:47:25)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
 [2022-01-27T19:56:00.001] [WARN] myWarn - Ruta /producto.html método GET no implementado
+[2022-01-28T18:10:11.237] [WARN] myWarn - Error en servidor Error: listen EADDRINUSE: address already in use :::8080
+[2022-01-28T18:13:11.413] [WARN] myWarn - Ruta /favicon.ico método GET no implementado
+[2022-01-28T18:31:03.461] [WARN] myWarn - Ruta /productos/crearproducto método POST no implementado
+[2022-01-28T18:31:46.748] [WARN] myWarn - Ruta /productos/crearProducto método POST no implementado
+[2022-01-28T19:25:31.453] [WARN] myWarn - Ruta /productos/actualizar/5 método POST no implementado
+[2022-01-28T19:25:55.426] [WARN] myWarn - Ruta /productos/actualizar/5 método POST no implementado
+[2022-01-28T19:27:26.805] [WARN] myWarn - Ruta /productos/actualizar/5 método POST no implementado
+[2022-01-28T19:48:29.966] [WARN] myWarn - Ruta /productos/actualizar/5 método POST no implementado
+[2022-01-28T19:50:19.783] [WARN] myWarn - Ruta /productos/actualizar/5 método POST no implementado
+[2022-01-28T19:50:42.925] [WARN] myWarn - Ruta /productos/actualizar/5 método POST no implementado
+[2022-01-28T19:51:17.686] [WARN] myWarn - Ruta /productos/actualizar/5 método POST no implementado
+[2022-01-28T19:57:19.192] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\clase42\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\clase42\node_modules\express\lib\response.js:170:12)
+    at eliminarProducto (E:\Users\Fede\Documents\DESA\backend\clase42\controllers\productoController.js:114:25)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2022-01-28T19:58:34.042] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\clase42\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\clase42\node_modules\express\lib\response.js:170:12)
+    at eliminarProducto (E:\Users\Fede\Documents\DESA\backend\clase42\controllers\productoController.js:114:25)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2022-01-28T20:09:21.526] [WARN] myWarn - Ruta /favicon.ico método GET no implementado

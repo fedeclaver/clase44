@@ -14,7 +14,7 @@
     "test:artillery": "artillery run artillery.yml",
     "test:autocannon": "autocannon -d 20 -c 100 \"http://localhost:8080/info\"",
     "start:inspect": "node --inspect index.js",
-    "test": "mocha test/apirestfull.test.js",
+    "test": "mocha  --timeout 1500000 test/apirestfull.test.js",
     "test-axios": "node ./test/axiostest.js"
   },
   "author": "fede",
@@ -34,7 +34,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
-    "faker": "^6.6.6",
+    "faker": "^5.5.3",
     "firebase-admin": "^10.0.0",
     "flash": "^1.1.0",
     "jsonwebtoken": "^8.5.1",
