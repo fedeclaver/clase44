@@ -36,7 +36,16 @@ const passport = require('passport');
 
 
 const {checkAuthentication} = require('./middleware/acceso');
+///entrega clase 44
 
+var { graphqlHTTP } = require('express-graphql');
+const schema = require('./graphql/schemaGraphql');
+const root = require('./graphql/graphql');
+app.use('/graphql', graphqlHTTP({
+    schema: schema,
+    rootValue: root,
+    graphiql: true
+}));
 
 
 

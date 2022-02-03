@@ -335,3 +335,4 @@
     at eliminarProducto (E:\Users\Fede\Documents\DESA\backend\clase42\controllers\productoController.js:114:25)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
 [2022-01-28T20:09:21.526] [WARN] myWarn - Ruta /favicon.ico método GET no implementado
+[2022-02-03T17:56:11.200] [WARN] myWarn - Ruta /favicon.ico método GET no implementado
